@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hamburgueria do Dev</title>
+</head>
+
+<body>
+<header>
+    <a href="#" class="logo">🍔 House Burger Code</a>
+    <nav id="nav-links"> <a href="#">Início</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    <button class="menu-toggle" aria-controls="nav-links" aria-expanded="false">
+        <svg fill="#FFFFFF" viewBox="0 0 24 24" width="24" height="24">
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+        </svg>
+    </button>
+    <a href="#cardapio" class="btn">Peça agora</a>
+</header>
+
+    <section id="home" class="hero-wrapper">
+        <article class="hero">
+            <div>
+                <h1>O Melhor Hambúrguer da Cidade</h1>
+                <p>Ingredientes frescos, receitas especiais e entrega rápida. Peça agora e receba em até 40 minutos!</p>
+                <nav class="hero-buttons">
+                    <a href="#cardapio" class="btn">Ver cardápio</a>
+                    <a href="https://wa.me/5511957194689" class="btn btn-outline">📲 WhatsApp</a>
+                </nav>
+                <ul class="hero-stats">
+                    <li>
+                        <strong>+500</strong>
+                        Cliente felizes
+                    </li>
+                    <li>
+                        <strong>4.9</strong>
+                        Avaliação ⭐
+                    </li>
+                    <li>
+                        <strong>40min</strong>
+                        Ou seu dinheiro de volta
+                    </li>
+
+                </ul>
+            </div>
+
+            <img alt="hamburger"
+                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=999&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        </article>
+    </section>
+
+    <section id="cardapio" class="cardapio">
+        <h2>Nosso Cardápio</h2>
+        <p>Escolha seu favorito e faça seu pedido pelo WhatsApp</p>
+
+        <ul class="menu-grid">
+            <li>
+                <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=400&h=300&fit=crop"
+                    alt="Burger Clássico">
+                <span class="badge">Mais Vendido</span>
+                <h3>Burger Clássico</h3>
+                <p>Pão brioche, 180g de carne, queijo cheddar, alface, tomate e molho especial</p>
+                <strong>R$ 28,90</strong>
+                <a href="https://wa.me/5511957194689?text=Olá! Gostaria de pedir um Burger Clássico"
+                    class="btn">Pedir</a>
+            </li>
+
+            <li>
+                <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=400&h=300&fit=crop"
+                    alt="Burger Bacon">
+                <h3>Burger Bacon</h3>
+                <p>Pão brioche, 180g de carne, bacon crocante, queijo, cebola caramelizada</p>
+                <strong>R$ 34,90</strong>
+                <a href="https://wa.me/5511957194689?text=Olá! Gostaria de pedir um Burger Bacon" class="btn">Pedir</a>
+            </li>
+
+            <li>
+                <img src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=400&h=300&fit=crop"
+                    alt="Burger Duplo">
+                <span class="badge hot">Novidade</span>
+                <h3>Burger Duplo</h3>
+                <p>Pão brioche, 2x 180g de carne, dobro de queijo, bacon e molho barbecue</p>
+                <strong>R$ 42,90</strong>
+                <a href="https://wa.me/5511957194689?text=Olá! Gostaria de pedir um Burger Duplo" class="btn">Pedir</a>
+            </li>
+
+            <li>
+                <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=400&h=300&fit=crop"
+                    alt="Burger Veggie">
+                <h3>Burger Veggie</h3>
+                <p>Pão integral, hambúrguer de grão de bico, queijo, rúcula e maionese verde</p>
+                <strong>R$ 32,90</strong>
+                <a href="https://wa.me/5511957194689?text=Olá! Gostaria de pedir um Burger Veggie" class="btn">Pedir</a>
+            </li>
+
+            <li>
+                <img src="https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?w=400&h=300&fit=crop"
+                    alt="Batata Frita">
+                <h3>Batata Frita</h3>
+                <p>Porção generosa de batatas fritas crocantes com sal e temperos especiais</p>
+                <strong>R$ 18,90</strong>
+                <a href="https://wa.me/5511957194689?text=Olá! Gostaria de pedir uma Batata Frita" class="btn">Pedir</a>
+            </li>
+
+            <li>
+                <img src="https://images.unsplash.com/photo-1625772299848-391b6a87d7b3?w=400&h=300&fit=crop"
+                    alt="Milk Shake">
+                <h3>Milk Shake</h3>
+                <p>Milk shake cremoso nos sabores chocolate, morango ou ovomaltine (400ml)</p>
+                <strong>R$ 16,90</strong>
+                <a href="https://wa.me/5511957194689?text=Olá! Gostaria de pedir um milk shake" class="btn">Pedir</a>
+            </li>
+        </ul>
+
+    </section>
+
+    <section id="sobre" class="sobre">
+        <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=600&h=500&fit=crop"
+            alt="Nossa cozinha">
+        <article>
+            <h2>Nossa História</h2>
+            <p>Desde 2023, a House Burger Code nasceu da paixão por hambúrgueres artesanais. Nosso segredo? Ingredientes
+                selecionados e muito amor em cada preparo.</p>
+            <ul>
+                <li>🥩 <strong>Carne Fresca</strong> - 100% bovina selecionada</li>
+                <li>🚀 <strong>Entrega Rápida</strong> - Máximo 40 minutos</li>
+                <li>💳 <strong>Pagamento Fácil</strong> - PIX, cartão ou dinheiro</li>
+            </ul>
+        </article>
+
+    </section>
+
+    <section id="cta" class="cta">
+        <h2>Bateu a Fome?</h2>
+        <p>Faça seu pedido agora e receba em casa!</p>
+        <a href="https://wa.me/5511957194689" class="btn btn-light">📲 Pedir pelo WhatsApp</a>
+    </section>
+
+    <footer id="contato">
+        <section>
+            <h3>🍔 House Burger Code</h3>
+            <p>O melhor hambúrguer artesanal da cidade.</p>
+        </section>
+
+        <section>
+            <h4>Horário de Funcionamento</h4>
+            <p>Terça a Domingo 18h às 23h</p>
+        </section>
+
+        <section>
+            <h4>Contato</h4>
+            <p>📱 (11) 99999-9999
+                📍 Rua dos Hambúrgueres, 123</p>
+        </section>
+
+        <section>
+            <h4>Redes Sociais</h4>
+            <p>Instagram</p>
+        </section>
+
+        <div class="copy">
+            <p>© 2025 - 🍔 House Burger Code</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
