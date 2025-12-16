@@ -1,5 +1,4 @@
 // script.js
-
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Seleciona o botão de menu e a navegação
     const menuToggle = document.querySelector('.menu-toggle');

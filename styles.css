@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -103,9 +102,9 @@ header nav a:hover {
     color: var(--primary);
 }
 
-/* --- ESTILOS DO MENU MOBILE (Adicionado) --- */
+/* --- ESTILOS DO MENU MOBILE --- */
 .menu-toggle {
-    display: none; /* Esconder por padrão em desktop */
+    display: none;
     background: none;
     border: none;
     cursor: pointer;
@@ -317,37 +316,18 @@ footer .copy {
 
 /* Telas até 992px (Tablet/Desktop menor) */
 @media (max-width: 992px) {
-    .hero {
-        grid-template-columns: 1fr; /* Hero em uma única coluna */
-        padding-top: 40px;
-    }
-
-    .hero img {
-        order: -1; /* Move a imagem para o topo da seção no mobile */
-    }
-
-    .sobre {
-        grid-template-columns: 1fr; /* Seção Sobre em uma única coluna */
-        gap: 30px;
-    }
-}
-
-/* Telas até 768px (Tablet/Mobile Grande) */
-@media (max-width: 768px) {
-    header {
-        padding: 15px 5%;
-    }
+    /* 1. AJUSTES DO HEADER / MENU MOBILE */
     
     header .btn {
-        display: none; /* Esconde o botão 'Peça Agora' no header */
+        display: none; 
     }
 
     .menu-toggle {
-        display: block; /* Mostra o botão de menu mobile */
+        display: block; 
     }
 
     header nav {
-        display: none; /* Esconde a navegação padrão (será mostrada via JS) */
+        display: none; 
         position: absolute;
         top: 60px; 
         left: 0;
@@ -360,18 +340,62 @@ footer .copy {
         box-shadow: var(--shadow);
     }
     
-    /* Classe adicionada via JavaScript para mostrar o menu */
     header nav.active {
         display: flex; 
     }
-
-    .hero h1 {
-        font-size: 38px;
+    
+    /* 2. AJUSTES DO HERO */
+    .hero {
+        grid-template-columns: 1fr; 
+        padding-top: 40px;
+        text-align: center; 
     }
 
+    .hero img {
+        order: -1; 
+        margin: 0 auto 30px; 
+    }
+    
+    .hero-buttons {
+        justify-content: center; 
+    }
+    
     .hero-stats {
-        flex-wrap: wrap; /* Permite quebrar a linha */
-        gap: 20px;
+        flex-wrap: wrap; 
+        gap: 30px;
+        justify-content: center; 
+    }
+
+    /* 3. AJUSTES DO SOBRE */
+    .sobre {
+        grid-template-columns: 1fr; 
+        gap: 30px;
+        text-align: center; 
+    }
+    
+    .sobre img {
+        margin: 0 auto; 
+    }
+    
+    .sobre ul {
+        align-items: center; 
+    }
+    
+    /* 4. AJUSTE DO FOOTER PARA 2 COLUNAS */
+    footer {
+        grid-template-columns: 1fr 1fr; /* Muda para 2 colunas */
+        gap: 30px;
+    }
+}
+
+/* Telas até 768px (Tablet/Mobile Grande) */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 5%;
+    }
+    
+    .hero h1 {
+        font-size: 38px;
     }
     
     .cardapio, .sobre, .cta {
@@ -379,22 +403,37 @@ footer .copy {
     }
     
     .menu-grid {
-        /* Ajusta o min-width para caber melhor em telas menores */
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     }
 }
 
-/* Telas até 480px (Mobile Pequeno) */
+/* Telas até 480px (Mobile Pequeno) - Correção do footer */
 @media (max-width: 480px) {
     .hero-buttons {
-        flex-direction: column; /* Botões do Hero empilhados */
+        flex-direction: column; 
     }
     
     footer {
-        grid-template-columns: 1fr 1fr; /* Footer em duas colunas (antes 4) */
+        /* NOVO: Força o rodapé para 1 coluna em telas muito pequenas */
+        grid-template-columns: 1fr; 
+        gap: 20px; 
+        padding: 40px 5% 20px; 
+        text-align: center; /* Centraliza o texto quando em 1 coluna */
     }
 
+    /* Opcional: Centraliza o texto principal do footer */
+    footer h3, footer p {
+        text-align: center;
+    }
+    
+    /* Opcional: Adiciona separação visual */
+    footer section:not(:last-of-type) {
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
     footer .copy {
-        grid-column: 1 / -1; /* O copyright ocupa toda a largura */
+        grid-column: 1 / -1; 
+        margin-top: 20px; 
     }
 }
