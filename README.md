@@ -13,4 +13,4 @@
 <br>
 <img src= "https://github.com/leonardosantos10/house-burger-code/blob/main/img/img-preview-desktop-3.png?raw=true"/>
 <br>
-<img src= "https://github.com/leonardosantos10/house-burger-code/blob/main/img/img-preview-desktop-3.png?raw=true"/>
+<img src= "https://github.com/leonardosantos10/house-burger-code/blob/main/img/img-preview-desktop-4.png?raw=true"/>
