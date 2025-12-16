@@ -9,7 +9,7 @@
 
 <img src= "https://github.com/leonardosantos10/house-burger-code/blob/main/img/img-preview-desktop-1.png?raw=true"/>
 <br>
-<img src= "https://github.com/leonardosantos10/Dev-coffee/blob/main/imgs/img-desktop-2.png?raw=true"/>
+<img src= "https://github.com/leonardosantos10/house-burger-code/blob/main/img/img-preview-desktop-2.png?raw=true"/>
 <br>
 <img src= "https://github.com/leonardosantos10/Dev-coffee/blob/main/imgs/img-desktop3.png?raw=true"/>
 <br>
