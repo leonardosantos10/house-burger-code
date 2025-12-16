@@ -6,7 +6,7 @@
 - <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="Css-logo"/>
 - <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="Js-logo"/>
 <br>
-[🔗 Acesse o site aqui](https://leonardosantos10.github.io/house-burger-code/)
+[🔗 Acesse o site aqui](https://leonardosantos10.github.io/house-burger-code/).
 <br>
 <img src= "https://github.com/leonardosantos10/house-burger-code/blob/main/img/img-preview-desktop-1.png?raw=true"/>
 <br>
